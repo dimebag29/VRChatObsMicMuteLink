@@ -1,6 +1,6 @@
 # ==============================================================================================================
-# 作成者:dimebag29 作成日:2025年2月10日 バージョン:v0.0
-# (Author:dimebag29 Creation date:February 10, 2025 Version:v0.0)
+# 作成者:dimebag29 作成日:2025年2月10日 バージョン:v0.1
+# (Author:dimebag29 Creation date:February 10, 2025 Version:v0.1)
 #
 # このプログラムのライセンスはCC0 (クリエイティブ・コモンズ・ゼロ)です。いかなる権利も保有しません。
 # (This program is licensed under CC0 (Creative Commons Zero). No rights reserved.)
@@ -18,6 +18,7 @@
 # ==============================================================================================================
 
 # python 3.7.5の標準ライブラリ (Libraries included as standard in python 3.7.5)
+import sys
 import os
 import threading
 
@@ -75,8 +76,11 @@ dispatcher = dispatcher.Dispatcher()
 LoggingMuteSelfParaThreadObj = threading.Thread(target=LoggingMuteSelfParaThread, daemon=True)  # daemon=Trueでデーモン化しないとメインスレッドが終了しても生き残り続けてしまう
 LoggingMuteSelfParaThreadObj.start()
 
-# タスクトレイのアイコン設定
-IconBasePath = os.path.abspath(".")                                             # exeが置かれている場所取得
+# タスクトレイののパスを取得 https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
+try:
+    IconBasePath = sys._MEIPASS
+except Exception:
+    IconBasePath = os.path.abspath(".")
 ExeIcon = Image.open(os.path.join(IconBasePath, "VRChatObsMicMuteLink.ico"))    # exeアイコン
 
 # タスクトレイアイコンを右クリックしたときのメニュー設定
