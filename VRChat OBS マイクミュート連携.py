@@ -76,7 +76,7 @@ dispatcher = dispatcher.Dispatcher()
 LoggingMuteSelfParaThreadObj = threading.Thread(target=LoggingMuteSelfParaThread, daemon=True)  # daemon=Trueでデーモン化しないとメインスレッドが終了しても生き残り続けてしまう
 LoggingMuteSelfParaThreadObj.start()
 
-# タスクトレイののパスを取得 https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
+# アイコンのパスを取得 https://stackoverflow.com/questions/31836104/pyinstaller-and-onefile-how-to-include-an-image-in-the-exe-file
 try:
     IconBasePath = sys._MEIPASS
 except Exception:
