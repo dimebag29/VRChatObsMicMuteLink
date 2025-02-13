@@ -1,10 +1,10 @@
 # ==============================================================================================================
-# 作成者:dimebag29 作成日:2025年2月10日 バージョン:v0.1
-# (Author:dimebag29 Creation date:February 10, 2025 Version:v0.1)
+# 作成者:dimebag29 作成日:2025年2月13日 バージョン:v0.2
+# (Author:dimebag29 Creation date:February 13, 2025 Version:v0.2)
 #
-# このプログラムのライセンスはCC0 (クリエイティブ・コモンズ・ゼロ)です。いかなる権利も保有しません。
-# (This program is licensed under CC0 (Creative Commons Zero). No rights reserved.)
-# https://creativecommons.org/publicdomain/zero/1.0/
+# このプログラムのライセンスはLGPLv3です。pystrayライブラリのライセンスを継承しています。
+# (This program is licensed to LGPLv3. Inherits the license of the pystray library.)
+# https://www.gnu.org/licenses/lgpl-3.0.html
 #
 # 開発環境 (Development environment)
 # ･python 3.7.5
