@@ -1,32 +1,32 @@
 # ==============================================================================================================
-# 作成者:dimebag29 作成日:2025年2月13日 バージョン:v0.2
-# (Author:dimebag29 Creation date:February 13, 2025 Version:v0.2)
+# 作成者:dimebag29 作成日:2025年8月11日 バージョン:v0.3
+# (Author:dimebag29 Creation date:August 11, 2025 Version:v0.3)
 #
 # このプログラムのライセンスはLGPLv3です。pystrayライブラリのライセンスを継承しています。
 # (This program is licensed to LGPLv3. Inherits the license of the pystray library.)
 # https://www.gnu.org/licenses/lgpl-3.0.html
 #
 # 開発環境 (Development environment)
-# ･python 3.7.5
-# ･auto-py-to-exe 2.36.0 (used to create the exe file)
+# ･python 3.12.0
+# ･auto-py-to-exe 2.46.0 (used to create the exe file)
 #
 # exe化時のauto-py-to-exeの設定
-# ･ひとつのディレクトリにまとめる (--onedir)
+# ･ひとつのファイルにまとめる (--onefile)
 # ･ウィンドウベース (--windowed)
 # ･exeアイコン設定 (--icon) (VRChatObsMicMuteLink.ico)
 # ･追加ファイルでタスクトレイアイコン追加 (--add-data) (VRChatObsMicMuteLink.ico)
 # ==============================================================================================================
 
-# python 3.7.5の標準ライブラリ (Libraries included as standard in python 3.7.5)
+# python 3.12.0の標準ライブラリ (Libraries included as standard in python 3.12.0)
 import sys
 import os
 import threading
 
 # 外部ライブラリ (External libraries)
-import win32api                                                                 # Included in pywin32 Version:306
-import win32con                                                                 # Included in pywin32 Version:306
-from pythonosc import dispatcher, osc_server                                    # Version:1.8.3
-from PIL import Image                                                           # Version:9.5.0
+import win32api                                                                 # Included in pywin32 Version:311
+import win32con                                                                 # Included in pywin32 Version:311
+from pythonosc import dispatcher, osc_server                                    # Version:1.9.3
+from PIL import Image                                                           # Version:11.3.0
 from pystray import Icon, Menu, MenuItem                                        # Version:0.19.5
 
 
